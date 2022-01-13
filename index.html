@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Video web</title>
+        <link rel="stylesheet" href="vid.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    </head>
+
+    <body>
+        <div id="containerGreen">
+            <div id="containerD">
+                <div class="mainvid">
+                        <video id="vid" src="music-1.mp4" controls width="500px" height="300px"></video>
+                </div>
+
+                <div class="nav">
+                    <button class="btn" onClick="volume(0.1)"><i class="fas fa-volume-up"></i></button>
+                    <button class="btnmain" onClick="playVid()"><i class="fas fa-play"></i></button>
+                    <button class="btnmain" onClick="pauseVid()"><i class="fas fa-pause"></i></button>
+                    <button class="btn" onClick="volume(-0.1)"><i class="fas fa-volume-down"></i></button>
+                </div>
+
+                <div class="choose">
+                    <h2>More Hits Video</h2>
+                </div>
+
+                <div class="subvid" onClick="changeVid('./music-2.3gp')">
+                    <div class="img">
+                        <img src="./music-2.jpg" alt="">
+                    </div>
+                    <div class="inFo" onClick="changedescription()">
+                        <p class="moreInfo">Crazy Frog - Axel F (Official Video))</p>
+                    </div>
+                </div>
+
+               <div class="subvid" onClick="changeVid('./music-3.3gp')">
+                    <div class="img">
+                        <img src="./music-3.jpg" alt="">
+                    </div>
+                    <div class="inFo">
+                        <p>Santana - Maria Maria ft. The Product G&B (Official Video)</p>
+                    </div>
+                </div>
+
+                <div class="subvid" onClick="changeVid('./music-4.mp4')">
+                    <div class="img">
+                        <img src="./music-4.jpg" alt="">
+                    </div>
+                    <div class="inFo">
+                        <p>Shakira - Waka Waka (This Time for Africa) (The Official 2010 FIFA World Cup™ Song)</p>
+                    </div>
+                </div>
+            
+
+            <div class="subvid" onClick="changeVid('./music-1.mp4')">
+                <div class="img">
+                    <img src="./music-1.jpg" alt="">
+                </div>
+                <div class="inFo">
+                    <p>Bon Jovi - It's My Life (Official Music Video)</p>
+                </div>
+            </div>
+        </div>
+
+            <script src="./vid.js"></script>
+        </div>
+    </body>
+   
+</html>
